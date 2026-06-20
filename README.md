@@ -242,7 +242,7 @@ docker build -t patient-management/<service-name> .
 
 ## Author
 
-**Name:** `<your-name>`  
-**GitHub:** `<your-github-profile>`  
-**LinkedIn:** `<your-linkedin-profile>`  
-**Email:** `<your-email>`
+**Name:** `Sujal Bendre`  
+**GitHub:** `https://github.com/Suj018300`  
+**LinkedIn:** `https://www.linkedin.com/in/bendresujal/`  
+**Email:** `sujalbendre2526@gmail.com`
