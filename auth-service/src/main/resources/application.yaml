@@ -1,0 +1,46 @@
+server:
+  port: 4005
+
+spring:
+  application:
+    name:
+      auth-service
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO}
+    show-sql: ${SPRING_JPA_SHOW_SQL}
+    properties:
+      hibernate:
+        dialect: ${SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT}
+        format_sql: ${SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL}
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_CLIENT_ID}
+            client-secret: ${SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_CLIENT_SECRET}
+
+security:
+  jwt:
+    secret: ${SECURITY_JWT_SECRET}
+    issuer: ${SECURITY_JWT_ISSUER}
+
+    access:
+      ttl-seconds: ${SECURITY_JWT_ACCESS_TTL_SECONDS}
+
+    refresh:
+      ttl-seconds: ${SECURITY_JWT_REFRESH_TTL_SECONDS}
+      token-cookie-name: ${SECURITY_JWT_REFRESH_TOKEN_COOKIE_NAME}
+
+    cookie:
+      domain: ${SECURITY_JWT_COOKIE_DOMAIN}
+      http-only: ${SECURITY_JWT_COOKIE_HTTP_ONLY}
+      secure: ${SECURITY_JWT_COOKIE_SECURE}
+      same-site: ${SECURITY_JWT_COOKIE_SAME_SITE}

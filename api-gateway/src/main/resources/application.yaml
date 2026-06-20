@@ -1,0 +1,55 @@
+server:
+  port: 4004 # Gateway listens on port 4004
+
+jwt:
+  secret: ${AUTH_SERVICE_URL}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    urls:
+      - name: Auth Service
+        url: /api-docs/auth
+      - name: Patient Service
+        url: /api-docs/patients
+
+
+spring:
+  application:
+    name:
+      api-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            ## http://localhost:4004/auth/login
+            ## API GATEWAY — http://auth-service:4005/1ogin
+            - id: auth-service-route
+              uri: http://auth-service:4005
+              predicates:
+                - Path=/auth/**
+              filters:
+                - StripPrefix=1
+
+            - id: patient-service-route
+              uri: http://patient-service:4000
+              predicates:
+                - Path=/api/**
+              filters:
+                - StripPrefix=1
+                - JwtValidation
+
+            - id: api-docs-patient-route
+              uri: http://patient-service:4000
+              predicates:
+                - Path=/api-docs/patients
+              filters:
+                - RewritePath=/api-docs/patients,/v3/api-docs
+
+            - id: api-docs-auth-route
+              uri: http://auth-service:4005
+              predicates:
+                - Path=/api-docs/auth
+              filters:
+                - RewritePath=/api-docs/auth,/v3/api-docs
