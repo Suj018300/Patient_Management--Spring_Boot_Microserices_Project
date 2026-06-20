@@ -1,5 +1,9 @@
 # Patient Management Microservices
 
+![Java](https://img.shields.io/badge/Java-21-red)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.14-brightgreen)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-blue)
+
 A backend-focused Java Spring Boot microservices project for patient management, authentication, billing account creation, and analytics event processing. The project demonstrates REST APIs, API Gateway routing, JWT-based security, role-based authorization, gRPC communication, Kafka event streaming, PostgreSQL persistence, OpenAPI documentation, and Dockerized service builds.
 
 ---
