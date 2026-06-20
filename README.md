@@ -1,8 +1,30 @@
 # Patient Management Microservices
 
+# Patient Management Microservices
+
 ![Java](https://img.shields.io/badge/Java-21-red)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.14-brightgreen)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-blue)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-6.x-6DB33F)
+![Spring Cloud Gateway](https://img.shields.io/badge/Spring%20Cloud-Gateway-6DB33F)
+![Microservices](https://img.shields.io/badge/Architecture-Microservices-blueviolet)
+![REST API](https://img.shields.io/badge/API-REST-orange)
+![JWT](https://img.shields.io/badge/Auth-JWT-black)
+![OAuth2](https://img.shields.io/badge/OAuth2-Google-blue)
+![Keycloak](https://img.shields.io/badge/Keycloak-Identity%20Provider-0078D4)
+![gRPC](https://img.shields.io/badge/gRPC-Service%20Communication-4285F4)
+![Protocol Buffers](https://img.shields.io/badge/Protocol%20Buffers-Protobuf-336791)
+![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-Event%20Driven-231F20)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1)
+![Hibernate](https://img.shields.io/badge/Hibernate-ORM-59666C)
+![Spring Data JPA](https://img.shields.io/badge/Spring%20Data-JPA-6DB33F)
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED)
+![Maven](https://img.shields.io/badge/Maven-Build-C71A36)
+![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-85EA2D)
+![Lombok](https://img.shields.io/badge/Lombok-Annotation%20Processor-BC4521)
+![ModelMapper](https://img.shields.io/badge/ModelMapper-DTO%20Mapping-orange)
+![WebFlux](https://img.shields.io/badge/Spring-WebFlux-6DB33F)
+![Maven Wrapper](https://img.shields.io/badge/Maven-Wrapper-C71A36)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 A backend-focused Java Spring Boot microservices project for patient management, authentication, billing account creation, and analytics event processing. The project demonstrates REST APIs, API Gateway routing, JWT-based security, role-based authorization, gRPC communication, Kafka event streaming, PostgreSQL persistence, OpenAPI documentation, and Dockerized service builds.
 
