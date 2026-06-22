@@ -21,7 +21,7 @@
 
 A backend-focused Java Spring Boot microservices project for patient management, authentication, billing account creation, and analytics event processing. The project demonstrates REST APIs, API Gateway routing, JWT-based security, role-based authorization, gRPC communication, Kafka event streaming, PostgreSQL persistence, OpenAPI documentation, and Dockerized service builds.
 
----
+-
 
 ## Architecture
 
